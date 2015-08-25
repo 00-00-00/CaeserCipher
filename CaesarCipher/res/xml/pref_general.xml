@@ -1,0 +1,144 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+  
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/cipher_list_titles"
+        android:entryValues="@array/cipher_list_values"
+        android:key="cipher_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_select_cipher" />
+   <!--  <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/second_list_titles"
+        android:entryValues="@array/second_list_values"
+        android:key="second_list"
+        android:title="@string/pref_second_cipher"/>-->
+    <PreferenceCategory
+        android:title="Cipher settings"
+        android:selectable="false"
+        >
+   
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="shift_cipher_settings"
+        android:title="@string/shift_cipher_settings"
+        android:persistent="false"
+        >
+         
+        <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+        android:defaultValue="3"
+        android:dialogMessage="Please select the key:"
+        android:max="25"
+        android:title="Shift Key"
+        android:key="shift_key"/>
+    
+            
+        
+    </PreferenceScreen>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="vigenere_cipher_settings"
+        android:title="@string/vigenere_cipher_settings"
+        android:persistent="false">
+        <EditTextPreference
+            android:defaultValue="JOE"
+            android:key="vigenere_key"
+            android:title="@string/enter_key"/>
+        
+    </PreferenceScreen>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="affine_cipher_settings"
+        android:title="@string/affine_cipher_settings"
+        android:persistent="false">
+      
+         <ListPreference 
+            android:defaultValue="1"
+            android:title="First Key"
+            android:entries="@array/first_key_list"
+          	android:entryValues="@array/first_key_values"
+            android:key="affine_a_l"
+            android:negativeButtonText="@null"
+        	android:positiveButtonText="@null"
+            />
+       
+      <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select second key:"
+            android:max="25"
+            android:title="Second Key"
+            android:key="affine_b" />
+    </PreferenceScreen>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="hill_cipher_settings"
+        android:title="@string/hill_cipher_settings"
+        android:persistent="false">
+        <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="First key"
+            android:key="hkey_0" />
+         <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Second key"
+            android:key="hkey_1" />
+          <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Third key"
+            android:key="hkey_2" />
+           <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Fourth key"
+            android:key="hkey_3" />
+            <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Fifth key"
+            android:key="hkey_4" />
+             <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Sixth key"
+            android:key="hkey_5" />
+              <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Seventh key"
+            android:key="hkey_6" />
+               <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Eighth key"
+            android:key="hkey_7" />
+                <com.cloudyear.caesarcipher.NumberPickerDialogPreference
+            android:defaultValue="0"
+            android:dialogMessage="Please select a key:"
+            android:max="25"
+            android:title="Ninth key"
+            android:key="hkey_8" />
+    </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

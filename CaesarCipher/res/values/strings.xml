@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Caesar Cipher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="input_text">Enter Plain text here</string>
+    <string name="encode">Encode</string>
+    <string name="output">Enter Cipher text here</string>
+    <string name="decode">Decode</string>
+    <string name="Swap">Swap</string>
+	<string name="share_title">Share</string>
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+
+    <string name="title_activity_display__settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+<string name="pref_ringtone_silent"></string>
+
+    <!-- Example General settings -->
+    
+    <string name="pref_second_cipher">Select secondary encryption</string>
+    <string name="pref_select_cipher">Select Cipher</string>
+	<string name="shift_cipher_settings">Shift Cipher Settings</string>
+	<string name="vigenere_cipher_settings">Vigenere Cipher Settings</string>
+	<string name="affine_cipher_settings">Affine Cipher Settings</string>
+	<string name="enter_key">Enter the key</string>
+	<string name="hill_cipher_settings">Hill Cipher Settings</string>
+ 
+    <string-array name="cipher_list_titles">
+        <item>Shift cipher</item>
+        <item>Vigenere cipher</item>
+        <item>Affine cipher</item>
+        <item>Hill cipher</item>
+    </string-array>
+     <string-array name="second_list_titles">
+        <item>No second encryption</item>
+        <item>Shift cipher</item>
+        <item>Vigenere cipher</item>
+        <item>Affine cipher</item>
+        <item>Hill cipher</item>
+      </string-array>
+    <string-array name="second_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+        <string-array name="cipher_list_values">
+        
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="first_key_list">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>15</item>
+        <item>17</item>
+        <item>19</item>
+        <item>21</item>
+        <item>23</item>
+        <item>25</item>
+        
+    </string-array>
+      <string-array name="first_key_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>15</item>
+        <item>17</item>
+        <item>19</item>
+        <item>21</item>
+        <item>23</item>
+        <item>25</item>
+        
+    </string-array>
+    
+  
+
+  
+  
+
+  
+
+</resources>
